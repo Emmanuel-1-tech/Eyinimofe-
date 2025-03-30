@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crystal Bank Registration</title>
+    <style>
+        /* General Styles */
+        body {
+            background-color: white;
+            font-family: Arial, sans-serif;
+          
+        }
+         
+         img{border-radius: 10px;}
+     }
+        .gold{font-family:cursive;
+        font-weight: 700;
+        }
+        .gold{color: black;
+        padding-left: 0.4em;
+        font-family: cursive;
+        margin-right: 1.5em;
+          font-family: cursive;
+          border-radius: 0.20em;
+          font-size: 36px;
+          text-decoration: underline;
+         }
+         
+         span{font-family: cursive;
+         font-size: 36px;
+         text-decoration: underline;}
+         
+         .gold{
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 200px;}
+}
+         
+        .green{font-size: 28px;
+            color: white;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 10px;
+            border-radius: 5px;}
+            
+              label {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, select {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+        
+           .submit-btn {
+            background-color: black;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+           width: 100%;
+        }
+
+        .submit-btn:hover {
+            background-color: #000b19d5;
+        }
+        
+         /* Responsive Design */
+        @media (max-width: 500px) {
+            .form-container {
+                width: 90%;
+            }
+            
+            .note{
+            
+            margin-left: 4em;
+  position: relative;
+  animation: mymove 7s 1;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes mymove {
+  from {right: 0px;}
+  to {right: 143px;}
+}
+
+.class{
+            margin-right: 4em;
+  position: relative;
+  animation: ourmove 7s 1;    
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes ourmove {
+  from {left: 0px;}
+  to {left: 143px;}
+  stay
+}
+
+            
+            }
+      
+         div{min-height:400px;
+  background:url('img1.jpg') no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #ffffff;
+  }
+  img {
+     border-radius: 10px;
+  }
+  p{color: black;
+  font-size: 18px;}
+  a{text-decoration: none;
+  color: #0000006d;}
+    </style>
+</head>
+<body>
+
+     <img src="Crystal.png" alt="Lab picture" width="410px" height="300px">
+     <hr>
+    <p>
+        <span class="class">Crystal</span><span class="note">Bank</span>
+    </p>
+
+    <div>
+        <h1 class="green">Let's Get You Registered</h1>
+    
+
+ <form action="Login.html">
+         <strong>
+      <p>
+             <label for="FirstName">First Name:</label>
+            <input class="book" type="text" name="FirstName" id="FirstName"
+            placeholder="Emmanuel" autocomplete="on" required>
+            </p>
+              <p>  <label for="SurnameName">Surname Name:</label>
+            <input class="book" type="text" name="SurnameName" id="SurnameName"
+            placeholder="Osimiri" autocomplete="on" required >
+            </p>
+            
+                  <p><label for="Number">BVN/NIN:</label>
+            <input class="book" type="Number" maxlength="4"minimum="4"name="Number" id="Number"
+            placeholder="Enter BVN/NIN" required >
+           </p>
+    <p>
+                   <label for="email">Email :</label>
+            <input class="book" type="Email" name="email" id="email"
+            placeholder="example@gmail.com" required>
+           </p>
+          <p><label for="Phone Number">Phone No:</label>
+            <input class="book" type="tel" name="Phone Number" id="Phone Number"
+            placeholder="070******89" required
+            max length="11"
+            pattern="[0-9]{3}[0-9]{4}[0-9]{4}"></p>
+            <p>
+                <label for="Age">Age:</label>
+            <select name="Age" id="Age">
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23" selected>23</option>
+                   <option value="24">24</option>
+                <option value="25">25</option>
+                <option value="26">26</option>
+                <option value="27">27</option>
+            </select>
+             
+                <!--<label for="yrs">Graduation year:</label>
+            <input type="Number" name="yrs" id="yrs" 
+            min="2016" max="2023" step="8" value="2023">-->
+            </div>
+            </p>
+    
+
+            <button type="submit" class="submit-btn">Register</button>
+        </form>
+        <p>
+      Already have an account? <a href="login.html">Log in</a>
+       </p>
+   
+
+</body>
+</html>
